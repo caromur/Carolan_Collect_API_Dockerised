@@ -1,0 +1,4 @@
+FROM openjdk:11
+MAINTAINER Adam Carolan
+COPY target/netflix-eureka-server-0.0.1-SNAPSHOT.jar Courier_Eureka.jar
+ENTRYPOINT ["java","-jar","/Courier_Eureka.jar"]

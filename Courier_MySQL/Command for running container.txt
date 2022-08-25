@@ -1,0 +1,5 @@
+// Create Container
+docker run --name courier-mysql --network courier_service_bridge -e MYSQL_ROOT_PASSWORD=admin -d adamcarolanait/courier-mysql
+
+// Enter Container
+docker run -it --network courier_service_bridge --rm mysql mysql -hcourier-mysql -uroot -p
