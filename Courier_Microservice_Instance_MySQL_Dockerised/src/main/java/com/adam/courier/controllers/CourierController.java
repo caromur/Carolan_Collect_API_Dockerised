@@ -77,6 +77,17 @@ public class CourierController {
 	}
 	
 	/**
+	 * Method added to demonstrate pipeline
+	 * @return String his is the added Ping2 method!
+	 */
+	@GetMapping("/ping2")
+	@ApiOperation(value="Ping the microservice.")
+	public String ping2()
+	{
+		return "This is the added Ping2 method!";
+	}
+	
+	/**
 	 * Method that returns the PDF_Test_Full.pdf label from a file
 	 * @return
 	 * @throws IOException
